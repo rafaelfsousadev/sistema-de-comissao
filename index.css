@@ -3,32 +3,69 @@
     padding: 0px;
     
 }
-h1,p{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-div > p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
-    display: flex;
-   
-    margin: 10px;
-}
-.cabeça{
-    display: flex;
-    gap:10px;
-    align-items: center;
-    justify-content: center;
-}
-.valor{
-    display: flex;
-    gap:170px;
-    align-items: center;
-    justify-content: center;
+body{
+    background-color: rgb(190, 233, 255);
 }
 
-button.rafael{
-    margin-right: 10em;
+section.cabeca > h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(51, 54, 252);
+    color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+}
+
+div{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+div> h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.ra{
+    background-color: red;
+    padding: 20px;
+}
+.ju{
+    background-color: red;
+    padding: 50px;
+}
+
+
+.valores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.valor1 > p{
+    border-bottom: 2px solid #171515;
+    padding-bottom: 2px;
+}
+
+.valor2 > p{
+    border-bottom: 2px solid #171515;
+    padding-bottom: 2px;
+}
+
+.valor1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+
+}
+.valor2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }

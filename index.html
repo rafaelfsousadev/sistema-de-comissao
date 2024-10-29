@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de comissão</title>
+    <title>sistema de comissão</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Sistema de comissão</h1>
-    <hr><br>
-    <div class="cabeça">
-        <p>Rafael</p> <button class="rafael">Adicionar valor</button> <p>Juliano</p> <button class="juliano">Adicionar valor</button>
-        
-    </div>
-    <div class="valor">
-        <input type="number" id="rafael">
-        <input type="number" id="juliano">
-
-    </div>
+    <section class="cabeca">
+        <h1>Sistema de comissão</h1>
+        <div class="add">
+            <div class="rafael">
+                <h2>Rafael</h2> 
+                <button class="botao" onclick="adicionarNumero()">Adicionar Valor</button>
+                <input type="number" id="valor1">
+            </div> 
+            <div class="add">
+                <h2>Juliano</h2> 
+                <button class="botao" onclick="adicionarNumero2()">Adicionar Valor</button>
+                <input type="number" id="valor2">
+            </div>
+        </div>
+    </section>
     
+    <section class="valores">
+        <div class="valor1" id="campo01">
+        </div>
+        <div class="valor2" id="campo02">
+        </div>
+    </section>
     <script src="index.js"></script>
+    
 </body>
 </html>
