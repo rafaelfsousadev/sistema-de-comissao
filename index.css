@@ -25,6 +25,16 @@ div{
     gap: 15px;
 }
 
+button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.374);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 div> h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -42,10 +52,12 @@ div> h2{
 
 .valores{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     margin-top: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 25em;
+    margin-bottom: 5em;
 }
 .valor1 > p{
     border-bottom: 2px solid #171515;
@@ -68,4 +80,21 @@ div> h2{
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+
+.somar{
+    display: flex;
+    justify-content: center;
+    gap: 25em;
+}
+
+.total > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+}
+
+.finalizar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
 }
