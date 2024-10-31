@@ -33,6 +33,7 @@ button{
     margin: 2px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.374);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
 }
 .botao1{
     background-color: blue;
