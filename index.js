@@ -52,5 +52,54 @@ function somarTotal2(){
 
 }
 
+function calcularPorcentagem(valor, percentual) {
+   return (valor * percentual) / 100;
+}
+
+function armazenar1(){
+   let permissao = window.confirm('deseja finalizar o dia e armazenar?')
+   if(permissao){
+      if(typeof localStorage.rafael === "undefined"){
+         localStorage.rafael = rafael
+         let resultado = calcularPorcentagem(localStorage.rafael, 2)
+         document.getElementById('fim1').innerText = `Vendas do mês :R$${localStorage.rafael}\n\n    comissão :R$${resultado}`
+      }else{
+         localStorage.rafael2 = Number(localStorage.rafael) + rafael
+         let resultado = calcularPorcentagem(localStorage.rafael2, 2)
+         localStorage.rafael = localStorage.rafael2
+         document.getElementById('fim1').innerText = `Vendas do mês :R$${localStorage.rafael}\n\n    comissão :R$${resultado}`
+      }
+      
+   }
+
+
+}
+
+
+function armazenar2(){
+   let permissao = window.confirm('deseja finalizar o dia e armazenar?')
+   if(permissao){
+      if(typeof localStorage.juliano === "undefined"){
+         localStorage.juliano = juliano
+         let resultado = calcularPorcentagem(localStorage.juliano, 2)
+         document.getElementById('fim2').innerText = `Vendas do mês :R$${localStorage.juliano}\n\n    comissão :R$${resultado}`
+      }else{
+         localStorage.juliano2 = Number(localStorage.juliano) + juliano
+         let resultado = calcularPorcentagem(localStorage.juliano2, 2)
+         localStorage.juliano = localStorage.juliano2
+         document.getElementById('fim2').innerText = `Vendas do mês :R$${localStorage.juliano}\n\n    comissão :R$${resultado}`
+      }
+      
+   }
+
+
+}
+
+function zerar(){
+   let confirma = window.confirm('Desejá resetar o mês. Isso apagarar as irmações do ultimo mês!')
+   if(confirma){
+      localStorage.clear()
+   }
+}
 
 

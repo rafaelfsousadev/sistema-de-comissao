@@ -12,12 +12,12 @@
         <div class="add">
             <div class="rafael">
                 <h2>Rafael</h2> 
-                <button class="botao" onclick="adicionarNumero()">Adicionar Valor</button>
+                <button class="botao1" onclick="adicionarNumero()">Adicionar Valor</button>
                 <input type="number" id="valor1">
             </div> 
             <div class="add">
                 <h2>Juliano</h2> 
-                <button class="botao" onclick="adicionarNumero2()">Adicionar Valor</button>
+                <button class="botao1" onclick="adicionarNumero2()">Adicionar Valor</button>
                 <input type="number" id="valor2">
             </div>
         </div>
@@ -32,24 +32,32 @@
     <script src="index.js"></script>
 
     <section class="somar">
-        <div class="total"><button onclick="somarTotal1()">Somar</button>
+        <div class="total"><button class="botao1" onclick="somarTotal1()">Somar</button>
             <p id="resultado1">Total R$0</p>
         </div>
         <div class="total">
-            <button onclick="somarTotal2()">Somar</button>
+            <button class="botao1" onclick="somarTotal2()">Somar</button>
             <p id="resultado2">Total R$0</p>
         </div>
     </section>
 
     <section class="finalizar">
         <div>
-            <button>Finalizar</button>
-            <p id="fim1"></p>
+            <button onclick="armazenar1()">Finalizar</button>
+            
         </div>
         <div>
-            <button>Finalizar</button>
-            <p id="fim2"></p>
+            <button onclick="armazenar2()">Finalizar</button>
+            
         </div>
+    </section>
+    <section class="finalizar2">
+        <p id="fim1" class="fim"></p>
+        <p id="fim2" class="fim"></p>
+    </section>
+
+    <section class="zerar">
+        <button onclick="zerar()">Resetar Mês</button>
     </section>
     
 </body>
